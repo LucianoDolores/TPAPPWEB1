@@ -1,21 +1,29 @@
 
 
-import tienda from "./cafe.js"
 import tienda from "./cafe.js"  
 
-const contenedor = document.getElementById("contenedor")
+
+const productos = tienda.carta;
+
+
 
 let contenidoHTML = ``;
 
 tienda.carta.forEach((carta)=>{
 
-    contenidoHTML += `
-    <dt>${carta.nombre}</dt>
-    <img ${carta.imagen}>
-    <dd>${carta.descripcion}</dd>
-    <dd>${carta.precio}</dd>`
+    contenidoHTML += `<article class="producto">
+    <figure class="producto__fig">
+        <img src="${carta.imagen}" width="80" height="80" />
+    </figure>
+    <div class="producto__datos">
+        <h3>${carta.nombre}</h3>
+        <div>${carta.descripcion}</div>
+        <div>$ ${carta.precio}</div>
+    </div>
+</article>`
 
 
-})
+});
 
-contenedor.innerHTML = "HOLAAAAAAAAAAAAAAAAAAAAAAAAAA"
+const contenedor = document.getElementById("contenedor-productos");
+contenedor.innerHTML = contenidoHTML
