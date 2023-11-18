@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
+    <script type="module" src="./principal.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -26,16 +26,30 @@
         </section>
     </header>
     <main>
-        <h2>PROMOCIONES</h2>
-        <br>
-        <h3>MERIENDAS/DESAYUNO</h3>
-        <dl>
-            <dt>Cafe Latte + 2 Medialunas</dt>
-            <img src="./assets/imagen.jpg" alt="PROMO" width="80" height="80">
-            <dd>Cafe con leche con dos medialunas o un criollo</dd>
-            <dd>$1800</dd>
-
-        </dl>
+        <figure class="cuerpo__figure">
+            <img src="./recursos/imagenes/computadora1.jpg" alt="Computadora">
+        </figure>
+        <section>
+            <header class="cuerpo-cabecera">
+                <h2 class="cuerpo-cabecera__titulo">CAFE</h2>
+                <p class="cuerpo-cabecera__mensaje">Los mejores cafe de cordoba :D</p>
+            </header>
+            <!-- contenedor -->
+            <div class="contenedor-productos" id="contenedor-productos">
+                <!-- contenido a repetir -->
+                <article class="producto">
+                    <figure class="producto__fig">
+                        <img src="" alt=""width="80" height="80"/>
+                    </figure>
+                    <div class="producto__datos">
+                        <h3>Titulo</h3>
+                        <div>Descripcion</div>
+                        <div>$ 3000</div>
+                    </div>
+                </article>
+                <!-- fin contenido a repetir -->
+            </div>
+        </section>
         
         
     </main>

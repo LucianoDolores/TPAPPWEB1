@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
+    <script type="module" src="./principal.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -26,23 +26,30 @@
         </section>
     </header>
     <main>
-        <h2>BRUNCHS</h2>
-        <dl>
-            <dt>BRUNCH N°1</dt>
-            <img src="./assets/imagenAPER.jpg" alt="BRUNCH" width="80" height="80">
-            <dd>Toston de palta y huevo, dips de quedo crema, mermelada brunche y hummus. Mix de panes, yogurt casero con granola.</dd>
-            <dd>$2600</dd>
-
-        </dl>
-        <h2> COSAS DULCES </h2>
-        <dl>
-            <dt>Tostada francesa</dt>
-            <img src="./assets/imagesTF.jpg" alt="TF" width="80" height="80">
-            <dd>Brioche, Crema de grutos rojos, frutas de estacion y almibar de canela.</dd>
-            <dd>$1750</dd>
-
-        </dl>
-
+        <figure class="cuerpo__figure">
+            <img src="./recursos/imagenes/computadora1.jpg" alt="Computadora">
+        </figure>
+        <section>
+            <header class="cuerpo-cabecera">
+                <h2 class="cuerpo-cabecera__titulo">CAFE</h2>
+                <p class="cuerpo-cabecera__mensaje">Los mejores cafe de cordoba :D</p>
+            </header>
+            <!-- contenedor -->
+            <div class="contenedor-productos" id="contenedor-productos">
+                <!-- contenido a repetir -->
+                <article class="producto">
+                    <figure class="producto__fig">
+                        <img src="" alt=""width="80" height="80"/>
+                    </figure>
+                    <div class="producto__datos">
+                        <h3>Titulo</h3>
+                        <div>Descripcion</div>
+                        <div>$ 3000</div>
+                    </div>
+                </article>
+                <!-- fin contenido a repetir -->
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <h2>CONTACTO:</h2>
