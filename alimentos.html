@@ -3,37 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <script type="module" src="./principal.js"></script>
+    <link rel="stylesheet" href="./assets/01-index.css" type="text/css">
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
-        <figure class="header__figure">
-            <img src="./assets/imagen2.jpg.jpg" alt="MENU"  width="1500"
-            height="150" title="MENU">
+    <header class="cabecera">
         
-        </figure>
-        <section class="header__logo">
-            <img src="./assets/9a111d800b8d468b8c54e768fe4ab224.png " alt="LOGO" width="200" height="150" title="LOGO">
-            <h1 class="seccion-tituloindex">CAFE BRLO </h1>
-            <nav class="nav-principal">
-                <a href="index.html">INICIO</a>
-                <a href="cafe.html">CAFE</a>
-                <a href="aperitivos.html">APERITIVOS</a>
-                <a href="alimentos.html">ALIMENTOS</a>
-                <a href="promos.html">PROMOS</a>
+        <section class="">
+            <figure class="cabecera__logo">
+                <img src="./assets/9a111d800b8d468b8c54e768fe4ab224.png " alt="LOGO" width="200" height="150" title="LOGO">
+            </figure>
+            <h1 class="cabecera__titulo">CAFE BRLO </h1>
+            
+            <nav class="menu-principal">
+                <a href="index.html" class="menu-principal__enlace">INICIO</a>
+                <a href="cafe.html" class="menu-principal__enlace">CAFE</a>
+                <a href="aperitivos.html" class="menu-principal__enlace">APERITIVOS</a>
+                <a href="alimentos.html" class="menu-principal__enlace">ALIMENTOS</a>
+                <a href="promos.html" class="menu-principal__enlace">PROMOS</a>
             </nav>
             
         </section>
     </header>
     <main>
-        <figure class="cuerpo__figure">
-            <img src="./recursos/imagenes/computadora1.jpg" alt="Computadora">
+        <main class="cuerpo">
+            <h2 class="cuerpo__titulo"></h2>
+            <figure class="cuerpo__figure">
+            <img src="./assets/Dulces-Semana-Santa_9.jpg" alt="MENU"  width="400"
+            height="150" title="MENU">
         </figure>
-        <section>
-            <header class="cuerpo-cabecera">
-                <h2 class="cuerpo-cabecera__titulo">CAFE</h2>
-                <p class="cuerpo-cabecera__mensaje">Los mejores cafe de cordoba :D</p>
-            </header>
+    
+        <header class="cuerpo-cabecera">
+            <h2 class="cuerpo-cabecera__titulo">ALIMENTOS</Menu></h2>
+            <p class="cuerpo-cabecera__mensaje">Bienvenido a los ALIMENTOS de BRLO CAFE</p>
+        </header>
             <!-- contenedor -->
             <div class="contenedor-productos" id="contenedor-productos">
                 <!-- contenido a repetir -->
@@ -51,14 +54,15 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <h2>CONTACTO:</h2>
-        <ul>
-            <li class="footer__link"><a href="https://www.instagram.com/" target>INSTAGRAM</a></li>
-            <li class="footer__link"><a href="https://www.facebook.com/" target>FACEBOOK</a></li>
-            <li class="footer__link"><a href="https://www.google.com.ar/maps/preview" target>UBICACION</a></li> 
+    <footer class="pie">
+        <h2 class="pie__titulo">CONTACTO:</h2>
+        <ul class="pie__lista">
+            <li class="pie__item"><a href="https://www.instagram.com/" target class="pie__link">INSTAGRAM</a></li>
+            <li class="pie__item"><a href="https://www.facebook.com/" target class="pie__link">FACEBOOK</a></li>
+            <li class="pie__item"><a href="https://www.google.com.ar/maps/preview" target class="pie__link">UBICACION</a></li> 
             
         </ul>
     </footer>
+
 </body>
 </html>

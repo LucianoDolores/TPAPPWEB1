@@ -1,92 +1,219 @@
 /* modelo de caja */
 * {
     box-sizing: border-box;
+    /* outline: 1px solid #f00; */
 }
+:root {
+    /* layout */
+    
+    --pie: #357575;
 
-/* limpiar */
+    /* fuentes */
+    font-family: Arial;
+    /* tamaño */
+    font-size: 18px;
+}
+/* limpiar relleno y margen */
 html,
 body,
 h1,
-h2,
-figure,
-p {
+figure {
     margin: 0;
     padding: 0;
 }
 
-/* fuentes*/
-html {
-    font-family:fantasy;
-    font-size: 18px;
-    line-height: 30px;
-}
-
 html,
 body {
     height: 100%;
 }
-/* primero movil */
+
 body {
     display: flex;
     flex-direction: column;
 }
-.padding-bloques {
-    padding-inline: 10px;
-}
-@media (min-width: 960px) {
-    .padding-bloques {
-        padding-inline: 10%;
-    }
-}
 
-/* layout zonas que se repiten ******************/
-
-/* bloque cabecera */
-.header {
+.cabecera {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding-block: 15px;
-    background-color: #fff6c6;
+    padding-block: 10px;
+    gap: 20px;
+    background: url(79656613-textura-de-granos-de-café-tostado-se-puede-utilizar-como-fondo.jpg) no-repeat;
+    background-size: cover;
 }
-.header__logo-link {
-    text-decoration: none;
+.cabecera__titulo {
+    text-align: center;
+    color:#4f3222;
 }
-.header__figure {
-    display: flex;
-    align-items: center;
-    height: 60px;
-}
-.header__logo {
-    height: 100%;
-}
-.nav-principal {
-    display: flex;
-    gap: 15px;
-}
-.nav-principal > a {
-    color:aqua;
-    text-decoration: none;
+.cabecera__logo{
+    border-radius: 80%;
+    margin:0 auto;
+	text-align:center;
 }
 
 
-.footer {
+.cuerpo {
+    flex-grow: 1;
+    padding-block: 0 40px;
+}
+
+.cuerpo__figure {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.cuerpo__titulo{
+    text-align: center;
+    font-family: fantasy;
+}
+
+.cuerpo__figure > img {
+    width: 100%;
+    min-height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+.cuerpo__figure > img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.2s ease-in-out;
+}
+.cuerpo:hover .cuerpo__figure > img {
+    transform: scale(1.07);
+ }
+
+.cuerpo-cabecera {
+    padding-block: 10px;
+    margin-block: 10px;
+    border-bottom: 2px solid #333;
+}
+
+
+.cuerpo-cabecera__titulo {
+    text-align: center;
+ }
+ .cuerpo-cabecera__mensaje {
+    padding: 10px;
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: center;
+    background-color: #333;
+}
+
+.pie {
     display: flex;
     justify-content: center;
-    background-color: #4e8580;
+    background-color: #d8d8d8;
 }
-.footer__lista {
+.pie__lista {
     list-style: none;
 }
-.footer__item {
+.pie__item {
     text-align: center;
     padding-block: 10px;
 }
-.footer__link {
+
+.pie__link{
     display: inline-flex;
     align-items: center;
     text-decoration: none;
     color: #555555;
+
 }
+.pie__titulo{
+    text-align: end;
+    color: #4f3222;
+}
+
+
+.menu-principal {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    min-height:80px;
+    gap: 20px;
+}
+.menu-principal__enlace {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: #030303;
+    text-decoration: none;
+}
+.menu-principal__enlace:hover {
+    color: #feb236;
+    text-decoration:double;
+}
+
+@media (min-width: 768px) {
+    .cabecera {
+        flex-direction:column-reverse;
+        justify-content: space-between;
+        padding-inline: 10%;
+    }
+    .cuerpo{
+        padding-inline: 10%;
+    }
+    .pie{
+        padding-inline: 10%;
+    }
+}
+
+
+
+
+/* bloque cabecera */
+
+.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+}
+.producto {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    width: 100%;
+    padding: 10px;
+    margin-block-end: 25px;
+}
+.producto:hover .producto__fig > img {
+   transform: scale(1.07);
+}
+.producto__datos {
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-block: 10px;
+    text-align: center;
+}
+.producto__fig {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.producto__fig > img {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.2s ease-in-out;
+}
+@media (min-width: 768px) {
+    .producto {
+        width: 50%;
+    }
+}
+
+/* media query productos > 1024px */
+@media (min-width: 1024px) {
+    .producto {
+        width: 25%;
+    }
+}
+
+
 
 

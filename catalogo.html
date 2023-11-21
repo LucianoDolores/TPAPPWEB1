@@ -2,58 +2,97 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
+    <link rel="stylesheet" href="./assets/01-index.css" type="text/css">
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
-        <figure class="header__figure">
-            <img src="./assets/imagen2.jpg.jpg" alt="MENU"  width="1500"
-            height="150" title="MENU">
+    <header class="cabecera">
         
-        </figure>
-        <section class="header__logo">
-            <img src="./assets/9a111d800b8d468b8c54e768fe4ab224.png " alt="LOGO" width="200" height="150" title="LOGO">
-            <h1 class="seccion-tituloindex">CAFE BRLO </h1>
-            <nav class="nav-principal">
-                <a href="index.html">INICIO</a>
-                <a href="cafe.html">CAFE</a>
-                <a href="aperitivos.html">APERITIVOS</a>
-                <a href="alimentos.html">ALIMENTOS</a>
-                <a href="promos.html">PROMOS</a>
+        <section class="">
+            <figure class="cabecera__logo">
+                <img src="./assets/9a111d800b8d468b8c54e768fe4ab224.png " alt="LOGO" width="200" height="150" title="LOGO">
+            </figure>
+            <h1 class="cabecera__titulo">CAFE BRLO </h1>
+            
+            <nav class="menu-principal">
+                <a href="index.html" class="menu-principal__enlace">INICIO</a>
+                <a href="cafe.html" class="menu-principal__enlace">CAFE</a>
+                <a href="aperitivos.html" class="menu-principal__enlace">APERITIVOS</a>
+                <a href="alimentos.html" class="menu-principal__enlace">ALIMENTOS</a>
+                <a href="promos.html" class="menu-principal__enlace">PROMOS</a>
             </nav>
             
         </section>
     </header>
     <main>
-        <h2>MENU</h2>
-        <br>
-        
-        <h3>CAFE</h3>
-        <br>
-        <img src="./assets/imagen3.jpg.jpg" alt="CAFE" width="300" height="80" title="CAFE">
-        <a href="cafe.html">CAFE</a><br>
-        <h3>APERITIVOS</h3><br>
-        <img src="./assets/imagenAP.jpg" alt="APERITIVOS" width="300" height="80" title="APERITIVOS">
-        <a href="aperitivos.html">APERITIVOS</a>
-        <h3>ALIMENTOS</h3><br>
-        <img src="./assets/imagenAPER.jpg" alt="CAFE" width="300" height="80" title="ALIMENTOS">
-        <a href="alimentos.html">ALIMENTOS</a><br>
-        <h3>PROMOS</h3><br>
-        <img src="./assets/pexels-markus-spiske-3806753.jpg" alt="APERITIVOS" width="300" height="80" title="PROMOS">
-        <a href="promos.html">PROMOS</a>
+        <main class="cuerpo">
+            <h2 class="cuerpo__titulo"></h2>
+            <figure class="cuerpo__figure">
+            <img src="./assets/imagen.jpg" alt="MENU"  width="400"
+            height="150" title="MENU">
+        </figure>
+    
+        <header class="cuerpo-cabecera">
+            <h2 class="cuerpo-cabecera__titulo">CAFE</Menu></h2>
+            <p class="cuerpo-cabecera__mensaje">Bienvenido a los CAFE de BRLO CAFE</p>
+        </header>
+
+        <div class="contenedor-productos" id="contenedor-productos">
+            <!-- contenido a repetir -->
+            <article class="producto">
+                <figure class="producto__fig">
+                    <img src="./assets/imagen3.jpg.jpg" alt="cafe" />
+                </figure>
+                <div class="producto__datos">
+                    <h3>CAFE</h3>
+                    <a href="cafe.html">INGRESA AL MENU DE CAFE</a>
+                </div>
+            </article>
+        <!-- contenido a repetir -->
+        <article class="producto">
+            <figure class="producto__fig">
+                <img src="./assets/imagenAP.jpg" alt="APERITIVOS" />
+            </figure>
+            <div class="producto__datos">
+                <h3>APERITIVOS</h3>
+                <a href="aperitivos.html">INGRESA AL MENU DE APERITIVOS</a>
+            </div>
+        </article>
+
+                <!-- contenido a repetir -->
+    <article class="producto">
+            <figure class="producto__fig">
+            <img src="./assets/imagenAPER.jpg" alt="APERITIVOS" />
+        </figure>
+    <div class="producto__datos">
+            <h3>ALIMENTOS</h3>
+        <a href="alimentos.html">INGRESA AL MENU DE ALIMENTOS</a>
+        </div>
+            </article>
+                <!-- contenido a repetir -->
+            <article class="producto">
+            <figure class="producto__fig">
+                <img src="./assets/pexels-markus-spiske-3806753.jpg" alt="APERITIVOS" />
+            </figure>
+            <div class="producto__datos">
+                <h3>PROMOCIONES</h3>
+                <a href="promos.html">INGRESA AL MENU DE PROMOCIONES</a>
+            </div>
+        </article>
+
 
 
         
     </main>
-    <footer class="footer">
-        <h2>CONTACTO:</h2>
-        <ul>
-            <li class="footer__link"><a href="https://www.instagram.com/" target>INSTAGRAM</a></li>
-            <li class="footer__link"><a href="https://www.facebook.com/" target>FACEBOOK</a></li>
-            <li class="footer__link"><a href="https://www.google.com.ar/maps/preview" target>UBICACION</a></li> 
+    <footer class="pie">
+        <h2 class="pie__titulo">CONTACTO:</h2>
+        <ul class="pie__lista">
+            <li class="pie__item"><a href="https://www.instagram.com/" target class="pie__link">INSTAGRAM</a></li>
+            <li class="pie__item"><a href="https://www.facebook.com/" target class="pie__link">FACEBOOK</a></li>
+            <li class="pie__item"><a href="https://www.google.com.ar/maps/preview" target class="pie__link">UBICACION</a></li> 
             
         </ul>
     </footer>
+
 </body>
 </html>
