@@ -4,16 +4,12 @@
     /* outline: 1px solid #f00; */
 }
 :root {
-    /* layout */
-    
-    --pie: #357575;
 
     /* fuentes */
     font-family: Arial;
     /* tamaño */
     font-size: 18px;
 }
-/* limpiar relleno y margen */
 html,
 body,
 h1,
@@ -162,10 +158,6 @@ body {
     }
 }
 
-
-
-
-/* bloque cabecera */
 
 .contenedor-productos {
     display: flex;
