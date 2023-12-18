@@ -4,10 +4,7 @@
     /* outline: 1px solid #f00; */
 }
 :root {
-
-    /* fuentes */
     font-family: Arial;
-    /* tamaño */
     font-size: 18px;
 }
 html,
@@ -35,14 +32,23 @@ body {
     align-items: center;
     padding-block: 10px;
     gap: 20px;
-    background: url(79656613-textura-de-granos-de-café-tostado-se-puede-utilizar-como-fondo.jpg) no-repeat;
+    background: url(/assets/79656613-textura-de-granos-de-café-tostado-se-puede-utilizar-como-fondo.jpg) no-repeat;
     background-size: cover;
 }
 .cabecera__titulo {
     text-align: center;
     color:#4f3222;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 .cabecera__logo{
+
+	text-align:center;
+}
+
+.img__redonda {
+    width:50%px;
+    height:50%px;
+    border:5px solid #d09c7d;
     border-radius: 80%;
     margin:0 auto;
 	text-align:center;
@@ -138,6 +144,7 @@ body {
     height: 100%;
     color: #030303;
     text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 .menu-principal__enlace:hover {
     color: #feb236;
@@ -199,7 +206,6 @@ body {
     }
 }
 
-/* media query productos > 1024px */
 @media (min-width: 1024px) {
     .producto {
         width: 25%;

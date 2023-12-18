@@ -37,7 +37,10 @@ const tienda = {
             precio: "1500",
             descripcion: "Cafe espresso, leche espumada y dulce de leche",
             categoria: "Cafe"
-        },
+        }
+
+    ],
+    aper:[
         {
             imagen: "./assets/istockphoto-1156933485-612x612.jpg",
             nombre: "Licor de naranja",
@@ -45,10 +48,7 @@ const tienda = {
             descripcion: "licor de naranja con jugo de naranja y soda tonica",
             categoria: "aperitivos"
         }
-       
-
     ],
-
 }
 
 export default tienda
